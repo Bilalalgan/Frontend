@@ -1,0 +1,78 @@
+html{
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+#menu .nav-item a{
+	color: black;
+}
+
+
+#menu{
+	list-style-type:none;
+	font-size:18px;
+	width: 50%;
+}
+
+#menu li{
+	display:inline;
+	height: 100%;
+}
+
+.active{
+	background-color: #9B002C !important;
+	color: white !important;
+}
+
+#myCarousel .carousel-inner img{
+	height:77.7vh;
+	
+}
+
+.btn-info{
+	background-color: #9B002C !important; 
+}
+
+.bg-info{
+	background-color: #9B002C !important; 
+	color: white !important;
+}
+
+.alert-info{
+	background-color: #9B002C !important; 
+	color: white !important;
+}
+
+.btn-info:hover{
+	opacity: 70%;
+}
+
+.bg-outline-info{
+	background-color: white !important; 
+	color: #9B002C !important;
+}
+
+.bg-outline-info:hover{
+	opacity: 70%;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #808080; 
+} 

@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Yazı Tipi-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Alışveriş Projesi</title>
+
+    <!-- Css Dosyalarım-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="bg-light">
+    <header>
+        <section class="top-bar">
+            <div class="container">
+                <div class="row align-items-center gy-3">
+                    <div class="col-lg-2 col-sm-4 col-4">
+                        <a href="index.html" class="navbar-brand">E-Commerce</a>
+                    </div>
+                    
+                    <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+                        <div class="text-end d-flex justify-content-end">
+                            <div class="dropdown">
+                                <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-user"></i><span class="ms-1 d-none d-sm-inline-block">Admin</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="hesapislemleri.html">Hesap İşlemleri</a></li>
+                                    <li><a class="dropdown-item" href="#">Çıkış Yap</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button class="btn btn-light" onclick="toggleDiv('urunekle')">
+                                    <i class="fa-regular fa-clipboard"></i> <span class="ms-1 d-none d-sm-inline-block">Ürün İşlemleri</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Anahtar Kelime">
+                                <button class="btn btn-primary">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler border" type="button" data-bs-target="#nav-menu" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-menu" >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link ps-0">Masaüstü Bilgisayar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Monitör</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Leptop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Akıllı Saatler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Kulaklık</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Telefonlar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Slider Kısmı-->
+    <section class="pt-3 slider">
+        <div class="container">
+            <main class="card">
+                <div class="row p-1 p-lg-3">
+                    <aside class="col-lg-3 d-none d-lg-block">
+                        <nav class="nav nav-pills flex-column overflow-auto flex-nowrap alt-menu" style="height: 350px;">
+                            <a href="Masaüstü.html" class="nav-link">Masaüstü Bilgisayar</a>
+                            <a href="Monitör.html" class="nav-link">Monitör</a>
+                            <a href="#" class="nav-link">Leptop</a>
+                            <a href="#" class="nav-link">Akıllı Saatler</a>
+                            <a href="#" class="nav-link">Kulaklık</a>
+                            <a href="#" class="nav-link">Telefonlar</a>
+                        </nav>
+                    </aside>
+                    <div class="col-lg-9">
+                        <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+                            </div>
+                            
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Resimler/slider-1.jpeg" alt="" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Resimler/slider-2.jpeg" alt="" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Resimler/slider-3.jpeg" alt="" class="d-block w-100">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!--Ürün İşlemleri-->
+    <section class="pt-3" id="urunekle" style="display: none;">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#masaustu" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Masaüstü</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#monitor" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Monitör</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#laptop" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Laptop</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#akıllısaat" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Akıllı Saat</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#kulaklık" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Kulaklık</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#telefon" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Telefon</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#reklampanosu" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Reklam Panosu</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="masaustu" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <form class="row ps-2 pt-3">
+                        <div class="mb-3">
+                          <label for="masaustu-urun1" class="form-label">Ürün İsmi</label>
+                          <input type="text" class="form-control" id="masaustu-urun1" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="masaustu-urun2" class="form-label">Yıldız</label>
+                            <select class="form-select" aria-label="Default select example" id="masaustu-urun2" required>
+                                <option selected disabled>Yıldız Sayısı</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="masaustu-urun3" class="form-label">Fiyat</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-describedby="basic-addon2" required id="masaustu-urun3" required>
+                                <span class="input-group-text" id="basic-addon2">TL</span>
+                            </div>
+                            <div id="emailHelp" class="form-text">Ürün indirimde ise indirimli hali yazılacaktır. İndirim öncesi fiyat aşağıdaki tik işaretlenip girilecektir.</div>
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="masaustu-urun4" class="form-label">İşletim Sistemi</label>
+                          <input type="text" class="form-control" id="masaustu-urun4" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="masaustu-urun5" class="form-label">İşlemci</label>
+                            <input type="text" class="form-control" id="masaustu-urun5" required>
+                          </div>
+                        <div class="mb-3 col-6">
+                            <label for="masaustu-urun6" class="form-label">SSD Kapasitesi</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="masaustu-urun6" required>
+                                <span class="input-group-text">GB</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="masaustu-urun7" class="form-label">Ram (Sistem Belleği)</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="masaustu-urun7" required>
+                                <span class="input-group-text">GB</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="masaustu-urun8" class="form-label">Harddisk Kapasitesi</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="masaustu-urun8" required>
+                                <span class="input-group-text">GB</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="masaustu-urun9" class="form-label">Ekran Kartı Tipi</label>
+                            <input type="text" class="form-control" id="masaustu-urun9" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="masaustu-urun10" class="form-label">Ekran Kartı Modeli</label>
+                            <input type="text" class="form-control" id="masaustu-urun10" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="masaustu-urun11" class="form-label">Büyük Resim</label>
+                            <input class="form-control" type="file" id="masaustu-urun11" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="masaustu-urun12" class="form-label">Resimler</label>
+                            <input class="form-control" type="file" id="masaustu-urun12" multiple>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-6 col-md-2 d-flex align-items-center">
+                                <input class="form-check-input" type="checkbox" value="" id="masaustu-urun13" onclick="toggleDiv('masaustu-div')">
+                                <label class="form-check-label ps-2 pt-1" for="masaustu-urun13">İndirimli Ürün</label>
+                            </div>
+                            <div class="col-6 col-md-4" style="display: none;" id="masaustu-div">
+                                <div class="d-flex">
+                                    <input type="text" class="form-control" id="masaustu-urun14" placeholder="İndirimsiz fiyatı giriniz.">
+                                    <span class="input-group-text">TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-3 col-md-1 mx-2">Ekle</button>
+                        <button type="submit" class="btn btn-success col-3 col-md-1">Güncelle</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="monitor" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <form class="row ps-2 pt-3">
+                        <div class="mb-3">
+                          <label for="monitorurun1" class="form-label">Ürün İsmi</label>
+                          <input type="text" class="form-control" id="monitorurun1" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="monitorurun2" class="form-label">Yıldız</label>
+                            <select class="form-select" aria-label="Default select example" id="monitorurun2" required>
+                                <option selected disabled>Yıldız Sayısı</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="monitorurun3" class="form-label">Fiyat</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-describedby="basic-addon2" required id="monitorurun3" required>
+                                <span class="input-group-text" id="basic-addon2">TL</span>
+                            </div>
+                            <div id="emailHelp" class="form-text">Ürün indirimde ise indirimli hali yazılacaktır. İndirim öncesi fiyat aşağıdaki tik işaretlenip girilecektir.</div>
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="monitorurun3" class="form-label">Yenileme Hızı (Hz)</label>
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="monitorurun3" required>
+                            <span class="input-group-text">Hz</span>
+                        </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="monitorurun4" class="form-label">Çözünürlük (max)</label>
+                            <select class="form-select" aria-label="Default select example" id="monitorurun4">
+                                <option selected disabled>Çözünürlük</option>
+                                <option value="1">1366x720p</option>
+                                <option value="2">1920x1080p</option>
+                                <option value="3">2568x1440p</option>
+                                <option value="4">3840x2160p</option>
+                                <option value="5">7680x4320p </option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-5 col-md-2">
+                            <label for="monitorurun5" class="form-label">Dahili Hoparlör</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">Var</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">Yok</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-7 col-md-5">
+                            <label for="monitorurun6" class="form-label">Ekran Büyüklüğü (İnç)</label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control" id="monitorurun6" required>
+                                <span class="input-group-text">inç</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-12 col-md-5">
+                            <label for="monitorurun7" class="form-label">Tepki Süresi</label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control" id="monitorurun7" required>
+                                <span class="input-group-text">ms</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="monitorurun8" class="form-label">Büyük Resim</label>
+                            <input class="form-control" type="file" id="monitorurun8" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="monitorurun9" class="form-label">Resimler</label>
+                            <input class="form-control" type="file" id="monitorurun9" multiple>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-6 col-md-2 d-flex align-items-center">
+                                <input class="form-check-input" type="checkbox" value="" id="monitorurun10" onclick="toggleDiv('monitor-div')">
+                                <label class="form-check-label ps-2 pt-1" for="monitorurun10">İndirimli Ürün</label>
+                            </div>
+                            <div class="col-6 col-md-4" style="display: none;" id="monitor-div">
+                                <div class="d-flex">
+                                    <input type="text" class="form-control" id="monitorurun11" placeholder="İndirimsiz fiyatı giriniz.">
+                                    <span class="input-group-text">TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-3 col-md-1 mx-2">Ekle</button>
+                        <button type="submit" class="btn btn-success col-3 col-md-1">Güncelle</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="laptop" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <form class="row ps-2 pt-3">
+                        <div class="mb-3">
+                          <label for="laptop-urun1" class="form-label">Ürün İsmi</label>
+                          <input type="text" class="form-control" id="laptop-urun1" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="laptop-urun2" class="form-label">Yıldız</label>
+                            <select class="form-select" aria-label="Default select example" id="laptop-urun2" required>
+                                <option selected disabled>Yıldız Sayısı</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="laptop-urun3" class="form-label">Fiyat</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-describedby="basic-addon2" required id="laptop-urun3" required>
+                                <span class="input-group-text" id="basic-addon2">TL</span>
+                            </div>
+                            <div id="emailHelp" class="form-text">Ürün indirimde ise indirimli hali yazılacaktır. İndirim öncesi fiyat aşağıdaki tik işaretlenip girilecektir.</div>
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="laptop-urun4" class="form-label">İşletim Sistemi</label>
+                          <input type="text" class="form-control" id="laptop-urun4" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="laptop-urun5" class="form-label">İşlemci</label>
+                            <input type="text" class="form-control" id="laptop-urun5" required>
+                          </div>
+                        <div class="mb-3 col-6">
+                            <label for="laptop-urun6" class="form-label">SSD Kapasitesi</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="laptop-urun6" required>
+                                <span class="input-group-text">GB</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="laptop-urun7" class="form-label">Ram (Sistem Belleği)</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="laptop-urun7" required>
+                                <span class="input-group-text">GB</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="laptop-urun8" class="form-label">Harddisk Kapasitesi</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="laptop-urun8" required>
+                                <span class="input-group-text">GB</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="laptop-urun9" class="form-label">Ekran Boyutu</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="laptop-urun9" required>
+                                <span class="input-group-text">inç</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="laptop-urun10" class="form-label">Ekran Kartı Modeli</label>
+                            <input type="text" class="form-control" id="laptop-urun10" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="laptop-urun11" class="form-label">Büyük Resim</label>
+                            <input class="form-control" type="file" id="laptop-urun11" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="laptop-urun12" class="form-label">Resimler</label>
+                            <input class="form-control" type="file" id="laptop-urun12" multiple>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-6 col-md-2 d-flex align-items-center">
+                                <input class="form-check-input" type="checkbox" value="" id="laptop-urun13" onclick="toggleDiv('laptop-div')">
+                                <label class="form-check-label ps-2 pt-1" for="laptop-urun13">İndirimli Ürün</label>
+                            </div>
+                            <div class="col-6 col-md-4" style="display: none;" id="laptop-div">
+                                <div class="d-flex">
+                                    <input type="text" class="form-control" id="laptop-urun14" placeholder="İndirimsiz fiyatı giriniz.">
+                                    <span class="input-group-text">TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-3 col-md-1 mx-2">Ekle</button>
+                        <button type="submit" class="btn btn-success col-3 col-md-1">Güncelle</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="akıllısaat" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <form class="row ps-2 pt-3">
+                        <div class="mb-3">
+                          <label for="akıllısaat-urun1" class="form-label">Ürün İsmi</label>
+                          <input type="text" class="form-control" id="akıllısaat-urun1" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="akıllısaat-urun2" class="form-label">Yıldız</label>
+                            <select class="form-select" aria-label="Default select example" id="akıllısaat-urun2" required>
+                                <option selected disabled>Yıldız Sayısı</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="akıllısaat-urun4" class="form-label">Fiyat</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-describedby="basic-addon2" required id="akıllısaat-urun4" required>
+                                <span class="input-group-text" id="basic-addon2">TL</span>
+                            </div>
+                            <div id="emailHelp" class="form-text">Ürün indirimde ise indirimli hali yazılacaktır. İndirim öncesi fiyat aşağıdaki tik işaretlenip girilecektir.</div>
+                        </div>
+                        <div class="mb-3 col-12">
+                            <label for="akıllısaat-urun5" class="form-label">Marka</label>
+                            <input type="text" class="form-control" id="akıllısaat-urun5" required>
+                        </div>
+                        <div class="mb-3 col-5 col-md-3">
+                            <label for="akıllısaat-urun6" class="form-label">Adım Sayar</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun6" id="akıllısaat-urun6">
+                                    <label class="form-check-label" for="akıllısaat-urun6">Var</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun6" id="akıllısaat-urun7" checked>
+                                    <label class="form-check-label" for="akıllısaat-urun7">Yok</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-5 col-md-3">
+                            <label for="akıllısaat-urun8" class="form-label">Kamera</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun8" id="akıllısaat-urun8">
+                                    <label class="form-check-label" for="akıllısaat-urun8">Var</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun8" id="akıllısaat-urun9" checked>
+                                    <label class="form-check-label" for="akıllısaat-urun9">Yok</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-5 col-md-3">
+                            <label for="akıllısaat-urun10" class="form-label">Su Geçirmezlik</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun10" id="akıllısaat-urun10">
+                                    <label class="form-check-label" for="akıllısaat-urun10">Var</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun10" id="akıllısaat-urun11" checked>
+                                    <label class="form-check-label" for="akıllısaat-urun11">Yok</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-5 col-md-3">
+                            <label for="akıllısaat-urun12" class="form-label">Uyku Takibi</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun12" id="akıllısaat-urun12">
+                                    <label class="form-check-label" for="akıllısaat-urun12">Var</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun12" id="akıllısaat-urun13" checked>
+                                    <label class="form-check-label" for="akıllısaat-urun13">Yok</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-5 col-md-3">
+                            <label for="akıllısaat-urun14" class="form-label">Sesli Görüşme</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun14" id="akıllısaat-urun14">
+                                    <label class="form-check-label" for="akıllısaat-urun14">Var</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun14" id="akıllısaat-urun15" checked>
+                                    <label class="form-check-label" for="akıllısaat-urun15">Yok</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-5 col-md-3">
+                            <label for="akıllısaat-urun16" class="form-label">Kalp Ritmi Ölçme</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun16" id="akıllısaat-urun16">
+                                    <label class="form-check-label" for="akıllısaat-urun16">Var</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun16" id="akıllısaat-urun17" checked>
+                                    <label class="form-check-label" for="akıllısaat-urun17">Yok</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-5 col-md-3">
+                            <label for="akıllısaat-urun18" class="form-label">GPS</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun18" id="akıllısaat-urun18">
+                                    <label class="form-check-label" for="akıllısaat-urun18">Var</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="akıllısaat-urun18" id="akıllısaat-urun19" checked>
+                                    <label class="form-check-label" for="akıllısaat-urun19">Yok</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="akıllısaat-urun20" class="form-label">Büyük Resim</label>
+                            <input class="form-control" type="file" id="akıllısaat-urun20" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="akıllısaat-urun21" class="form-label">Resimler</label>
+                            <input class="form-control" type="file" id="akıllısaat-urun21" multiple>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-6 col-md-2 d-flex align-items-center">
+                                <input class="form-check-input" type="checkbox" value="" id="akıllısaat-urun22" onclick="toggleDiv('akıllısaat-div')">
+                                <label class="form-check-label ps-2 pt-1" for="akıllısaat-urun22">İndirimli Ürün</label>
+                            </div>
+                            <div class="col-6 col-md-4" style="display: none;" id="akıllısaat-div">
+                                <div class="d-flex">
+                                    <input type="text" class="form-control" id="akıllısaat-urun23" placeholder="İndirimsiz fiyatı giriniz.">
+                                    <span class="input-group-text">TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-3 col-md-1 mx-2">Ekle</button>
+                        <button type="submit" class="btn btn-success col-3 col-md-1">Güncelle</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="kulaklık" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <form class="row ps-2 pt-3">
+                        <div class="mb-3">
+                          <label for="kulaklık-urun1" class="form-label">Ürün İsmi</label>
+                          <input type="text" class="form-control" id="kulaklık-urun1" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="kulaklık-urun2" class="form-label">Yıldız</label>
+                            <select class="form-select" aria-label="Default select example" id="kulaklık-urun2" required>
+                                <option selected disabled>Yıldız Sayısı</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="kulaklık-urun4" class="form-label">Fiyat</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-describedby="basic-addon2" required id="kulaklık-urun4" required>
+                                <span class="input-group-text" id="basic-addon2">TL</span>
+                            </div>
+                            <div id="emailHelp" class="form-text">Ürün indirimde ise indirimli hali yazılacaktır. İndirim öncesi fiyat aşağıdaki tik işaretlenip girilecektir.</div>
+                        </div>
+                        <div class="mb-3 col-12">
+                            <label for="kulaklık-urun5" class="form-label">Marka</label>
+                            <input type="text" class="form-control" id="kulaklık-urun5" required>
+                        </div>
+                        <div class="mb-3 col-6 col-md-6">
+                            <label for="kulaklık-urun2" class="form-label">Tür</label>
+                            <select class="form-select" aria-label="Default select example" id="kulaklık-urun2" required>
+                                <option selected disabled>Tür</option>
+                                <option value="1">Bluetooth</option>
+                                <option value="2">Kablolu</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-6 col-md-6">
+                            <label for="kulaklık-urun2" class="form-label">Bluetooth Versiyon</label>
+                            <select class="form-select" aria-label="Default select example" id="kulaklık-urun2" required>
+                                <option selected disabled>Bluetooth Versiyon</option>
+                                <option value="1">Yok</option>
+                                <option value="2">1.0</option>
+                                <option value="3">2.0</option>
+                                <option value="4">3.0</option>
+                                <option value="5">4.0</option>
+                                <option value="6">5.0</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-6 col-md-4">
+                            <label for="kulaklık-urun8" class="form-label">Çift Telefon Desteği</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="kulaklık-urun8" id="kulaklık-urun8">
+                                    <label class="form-check-label" for="kulaklık-urun8">Var</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="kulaklık-urun8" id="kulaklık-urun9" checked>
+                                    <label class="form-check-label" for="kulaklık-urun9">Yok</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6 col-md-4">
+                            <label for="kulaklık-urun10" class="form-label">Suya & Tere Dayanıklı</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="kulaklık-urun10" id="kulaklık-urun10">
+                                    <label class="form-check-label" for="kulaklık-urun10">Var</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="kulaklık-urun10" id="kulaklık-urun11" checked>
+                                    <label class="form-check-label" for="kulaklık-urun11">Yok</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-5 col-md-4">
+                            <label for="kulaklık-urun12" class="form-label">Kullanım Tipi</label>
+                            <div class="input-group mb-3">
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="kulaklık-urun12" id="kulaklık-urun12">
+                                    <label class="form-check-label" for="kulaklık-urun12">Kulak İçi</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="kulaklık-urun12" id="kulaklık-urun13" checked>
+                                    <label class="form-check-label" for="kulaklık-urun13">Kulak Üstü</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="kulaklık-urun20" class="form-label">Büyük Resim</label>
+                            <input class="form-control" type="file" id="kulaklık-urun20" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="kulaklık-urun21" class="form-label">Resimler</label>
+                            <input class="form-control" type="file" id="kulaklık-urun21" multiple>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-6 col-md-2 d-flex align-items-center">
+                                <input class="form-check-input" type="checkbox" value="" id="kulaklık-urun22" onclick="toggleDiv('kulaklık-div')">
+                                <label class="form-check-label ps-2 pt-1" for="kulaklık-urun22">İndirimli Ürün</label>
+                            </div>
+                            <div class="col-6 col-md-4" style="display: none;" id="kulaklık-div">
+                                <div class="d-flex">
+                                    <input type="text" class="form-control" id="kulaklık-urun23" placeholder="İndirimsiz fiyatı giriniz.">
+                                    <span class="input-group-text">TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-3 col-md-1 mx-2">Ekle</button>
+                        <button type="submit" class="btn btn-success col-3 col-md-1">Güncelle</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="telefon" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <form class="row ps-2 pt-3">
+                        <div class="mb-3">
+                          <label for="telefon-urun1" class="form-label">Ürün İsmi</label>
+                          <input type="text" class="form-control" id="telefon-urun1" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="telefon-urun2" class="form-label">Yıldız</label>
+                            <select class="form-select" aria-label="Default select example" id="telefon-urun2" required>
+                                <option selected disabled>Yıldız Sayısı</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="telefon-urun3" class="form-label">Fiyat</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-describedby="basic-addon2" required id="telefon-urun3" required>
+                                <span class="input-group-text" id="basic-addon2">TL</span>
+                            </div>
+                            <div id="emailHelp" class="form-text">Ürün indirimde ise indirimli hali yazılacaktır. İndirim öncesi fiyat aşağıdaki tik işaretlenip girilecektir.</div>
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="telefon-urun4" class="form-label">Marka</label>
+                          <input type="text" class="form-control" id="telefon-urun4" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="telefon-urun5" class="form-label">Model</label>
+                            <input type="text" class="form-control" id="telefon-urun5" required>
+                          </div>
+                        <div class="mb-3 col-6">
+                            <label for="telefon-urun6" class="form-label">Dahili Hafıza</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="telefon-urun6" required>
+                                <span class="input-group-text">GB</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="telefon-urun7" class="form-label">RAM Kapasitesi</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="telefon-urun7" required>
+                                <span class="input-group-text">GB</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="telefon-urun8" class="form-label">Kamera Çözünürlüğü</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="telefon-urun8" required>
+                                <span class="input-group-text">MP</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="telefon-urun9" class="form-label">Ekran Boyutu</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="telefon-urun9" required>
+                                <span class="input-group-text">inç</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="telefon-urun10" class="form-label">Pil Gücü</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="telefon-urun10" required>
+                                <span class="input-group-text">mAh</span>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="telefon-urun11" class="form-label">Ön (Selfie) Kamera</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="telefon-urun11" required>
+                                <span class="input-group-text">MP</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefon-urun12" class="form-label">Büyük Resim</label>
+                            <input class="form-control" type="file" id="telefon-urun12" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefon-urun13" class="form-label">Resimler</label>
+                            <input class="form-control" type="file" id="telefon-urun13" multiple>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-6 col-md-2 d-flex align-items-center">
+                                <input class="form-check-input" type="checkbox" value="" id="telefon-urun14" onclick="toggleDiv('telefon-div')">
+                                <label class="form-check-label ps-2 pt-1" for="telefon-urun14">İndirimli Ürün</label>
+                            </div>
+                            <div class="col-6 col-md-4" style="display: none;" id="telefon-div">
+                                <div class="d-flex">
+                                    <input type="text" class="form-control" id="telefon-urun15" placeholder="İndirimsiz fiyatı giriniz.">
+                                    <span class="input-group-text">TL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-3 col-md-1 mx-2">Ekle</button>
+                        <button type="submit" class="btn btn-success col-3 col-md-1">Güncelle</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="reklampanosu" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <form class="row ps-2 pt-3">
+                        <div class="mb-3">
+                            <label for="telefon-urun13" class="form-label">Resimler</label>
+                            <input class="form-control" type="file" id="telefon-urun13" multiple>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-3 col-md-1 mx-2">Ekle</button>
+                        <button type="submit" class="btn btn-danger col-3 col-md-1">Temizle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Ürünler-->
+    <section class="pt-3">
+        <div class="container">
+            <header>
+                <h3 class="mb-md-3 md-0">Ürünler</h3>
+            </header>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="urunsayfaları/akıllısaat-urun.html" class="img-wrap">
+                            <b class="badge bg-success">İndirim</b>
+                            <img src="Resimler/Akıllısaatler/1-1.jpeg" alt="">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <div class="btn-group dropup float-end">
+                                <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ürünü Sil</a></li>
+                                    <li><a class="dropdown-item" href="#">Ürünü Güncelle</a></li>
+                                </ul>
+                            </div>
+                            <a href="" class="title text-truncate">
+                                Apple Watch Seri 7 Gps, 41MM Mavi Alüminyum Kasa ve Mavi Spor Kordon - Regular MKN13TU/A
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">9.199</span>
+                                <del cite="price-old">10.999</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="" class="img-wrap">
+                            <img src="Resimler/2.jpeg" alt="">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <div class="btn-group dropup float-end">
+                                <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ürünü Sil</a></li>
+                                    <li><a class="dropdown-item" href="#">Ürünü Güncelle</a></li>
+                                </ul>
+                            </div>
+                            <a href="" class="title text-truncate">
+                                Apple Watch Yıldız Işığı Alüminyum Kasa ve Spor Kordon 
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">6.599</span>
+                                <del cite="price-old">6.999</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="" class="img-wrap">
+                            <b class="badge bg-danger">Fırsat Ürün</b>
+                            <img src="Resimler/3.jpeg" alt="">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <div class="btn-group dropup float-end">
+                                <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ürünü Sil</a></li>
+                                    <li><a class="dropdown-item" href="#">Ürünü Güncelle</a></li>
+                                </ul>
+                            </div>
+                            <a href="" class="title text-truncate">
+                                Apple Watch Yıldız Işığı Alüminyum Kasa ve Spor Kordon 
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">6.599</span>
+                                <del cite="price-old">6.999</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="urunsayfaları/masaustu-urun.html" class="img-wrap">
+                            <b class="badge bg-success">İndirim</b>
+                            <img src="Resimler/Masaüstü/1.jpeg" alt="">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <div class="btn-group dropup float-end">
+                                <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ürünü Sil</a></li>
+                                    <li><a class="dropdown-item" href="#">Ürünü Güncelle</a></li>
+                                </ul>
+                            </div>
+                            <a href="" class="title text-truncate">
+                                MSI MAG Codex X5 10SC-830EU Intel Core i7 10700KF 16GB 512GB SSD RTX2060 Windows 10 Home Masaüstü Bilgisayar
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">41.999</span>
+                                <del cite="price-old">49.599</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="urunsayfaları/monitor-urun.html" class="img-wrap">
+                            <b class="badge bg-success">İndirim</b>
+                            <img src="Resimler/Monitor/1-1.jpeg" alt="">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <div class="btn-group dropup float-end">
+                                <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ürünü Sil</a></li>
+                                    <li><a class="dropdown-item" href="#">Ürünü Güncelle</a></li>
+                                </ul>
+                            </div>
+                            <a href="" class="title text-truncate">
+                                Casper Excalibur M.E238FHD-G 23.8" 200Hz 1ms 300NIT (HDMI+Display) Curved Freesync + G-Sync FHD LED Monitör
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">2.999</span>
+                                <del cite="price-old">3.500</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="urunsayfaları/laptop-urun.html" class="img-wrap">
+                            <b class="badge bg-success">İndirim</b>
+                            <img src="Resimler/Laptop/1-1.jpeg" alt="">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <div class="btn-group dropup float-end">
+                                <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ürünü Sil</a></li>
+                                    <li><a class="dropdown-item" href="#">Ürünü Güncelle</a></li>
+                                </ul>
+                            </div>
+                            <a href="" class="title text-truncate">
+                                MSI GF63 Thin 11UD-428XTR Intel Core i7 11800H 16GB 512GB SSD RTX3050Ti Freedos 15.6'' Taşınabilir Bilgisayar
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">24.340</span>
+                                <del cite="price-old">31.999</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="urunsayfaları/telefon-urun.html" class="img-wrap">
+                            <img src="Resimler/Telefon/1-1.jpeg" alt="">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <div class="btn-group dropup float-end">
+                                <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ürünü Sil</a></li>
+                                    <li><a class="dropdown-item" href="#">Ürünü Güncelle</a></li>
+                                </ul>
+                            </div>
+                            <a href="" class="title text-truncate">
+                                iPhone 14 Pro Max 128 GB
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">45.949</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <figure class="card shadow">
+                        <a href="urunsayfaları/kulaklık-urun.html" class="img-wrap">
+                            <b class="badge bg-success">İndirim</b>
+                            <img src="Resimler/Kulaklık/1-1.jpeg" alt="">
+                        </a>
+                        <figcaption class="info-wrap border-top">
+                            <div class="btn-group dropup float-end">
+                                <button type="button" class="btn btn-light btn-icon" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ürünü Sil</a></li>
+                                    <li><a class="dropdown-item" href="#">Ürünü Güncelle</a></li>
+                                </ul>
+                            </div>
+                            <a href="" class="title text-truncate">
+                                Apple AirPods 2. Nesil Kulaklık MV7N2TU/A
+                            </a>
+                            <div class="price-wrap">
+                                <span class="price">2.699</span>
+                                <del cite="price-old">3.000</del>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-primary">
+        <div class="conteiner">
+            <div class="row gy-3 px-5">
+                <div class="col-md-4">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Email">
+                            <button class="btn btn-outline-warning">Abone Ol</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-8">
+                    <nav class="text-center text-md-end">
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fab fa-facebook"></i>
+                        </a> 
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fab fa-instagram"></i>
+                        </a> 
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fab fa-youtube"></i>
+                        </a> 
+                        <a href="#" class="btn btn-icon btn-outline-warning">
+                            <i class="fab fa-twitter"></i>
+                        </a> 
+                    </nav>
+                </div>
+                <div class="col-md-12">
+                    <p class="text-center text-white">
+                        @2025 Tüm Hakları Saklıdır.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <script>
+        function toggleDiv(id) {
+            const div = document.getElementById(id);
+            if (div.style.display === "none") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
