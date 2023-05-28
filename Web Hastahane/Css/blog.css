@@ -1,0 +1,53 @@
+.main-header.blog {
+    height: 50vh;
+    background-image: url('../Resimler/bg-2.jpeg');
+}
+
+.flex-columns.blog {
+    padding: 50px ;
+}
+
+.flex-columns.blog .row {
+    padding-bottom: 10px;
+}
+
+/* Bu alanda resim olan kısma 2 birim, Yazı olan alana 3 birim alan verdik*/
+
+.flex-columns.blog .row:nth-child(add){
+    flex: 2;
+}
+
+.flex-columns.blog .row .column:nth-child(even){
+    flex: 3;
+}
+
+/* Bu alanda resim olan kısma 2 birim, Yazı olan alana 3 birim alan verdik*/
+
+.about.blog {
+    color: #fff;
+}
+
+.about.blog h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.blog-btn{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.blog-btn:hover{
+    background-color: #fff;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+
+@media (max-width: 768px){
+
+    .flex-columns.blog {
+        padding: 20px ;
+    }      
+}
